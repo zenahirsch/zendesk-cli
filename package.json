@@ -1,0 +1,33 @@
+{
+  "name": "zendesk-cli",
+  "version": "0.0.1",
+  "description": "A command line interface for ZenDesk admin tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenahirsch/zendesk-cli.git"
+  },
+  "keywords": [
+    "zendesk",
+    "cli"
+  ],
+  "author": "Zena Hirsch <hirsch.zena@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "zd": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/zenahirsch/zendesk-cli/issues"
+  },
+  "homepage": "https://github.com/zenahirsch/zendesk-cli#readme",
+  "dependencies": {
+    "columnify": "^1.5.4",
+    "commander": "^2.9.0",
+    "mkdirp": "^0.5.1",
+    "node-zendesk": "^1.1.8",
+    "open": "0.0.5"
+  }
+}
