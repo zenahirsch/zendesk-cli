@@ -1,5 +1,7 @@
 # zendesk-cli
 
+A command line interface for ZenDesk admin tasks.
+
 ## Table of Contents
 
 * [Install](#install)
