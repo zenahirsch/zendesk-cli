@@ -66,7 +66,7 @@ Option | Argument | Description
 `-u, --update` | `<macro_id>` | Update macro
 `-o, --open` | `[macro_id]` | Open the macro in browser
 
-#### add 
+#### add macro
 ```
 $ zd add macro [options]
 ```
@@ -86,7 +86,7 @@ Option | Argument | Description
 `-p, --private` | | Set comment mode to private
 `-o, --open` | | Open the macro in browser after adding
 
-#### update
+#### update macro
 ```
 $ zd update macro <macro_id> [options]
 ```
@@ -106,7 +106,7 @@ Option | Argument | Description
 `-p, --private` | | Set comment mode to private
 `-o, --open` | | Open the macro in browser after updating
 
-#### list
+#### list macros
 ```
 $ zd list macros
 ```
@@ -116,7 +116,7 @@ This command is an alias for `zd macro -l`
 Options:
 none
 
-#### open
+#### open macro
 ```
 $ zd open macro <macro_id>
 ```
