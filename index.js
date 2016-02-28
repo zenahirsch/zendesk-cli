@@ -24,6 +24,7 @@ program
     .option(`-i, --inactive`, `Make macro inactive`)
     .option(`-p, --private`, `Set comment mode to private`)
     .option(`-l, --list`, `List all macros`)
+    .option(`-s, --sort <sort_by>`, `Sort macros in list view`)
     .option(`-u, --update <macro_id>`, `Update macro`, parseInt)
     .option(`-o, --open [macro_id]`, `Open the macro in ZenDesk`, parseInt)
     .description(`Add, update, list, open macros`)
