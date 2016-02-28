@@ -113,8 +113,7 @@ $ zd list macros
 
 This command is an alias for `zd macro -l`
 
-Options:
-none
+Options: None
 
 #### open macro
 ```
@@ -123,8 +122,7 @@ $ zd open macro <macro_id>
 
 This command is an alias for `zd macro -o <macro_id>`
 
-Options: 
-None
+Options: None
 
 ### License
 
