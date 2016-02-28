@@ -18,7 +18,7 @@ $ npm install -g zendesk-cli
 ### Usage
 
 ```
-$ zd [options] [command]
+$ zd [command] [options]
 ```
 
 ### Setup 
@@ -64,7 +64,67 @@ Option | Argument | Description
 `-p, --private` | | Set comment mode to private
 `-l, --list` | | List all macros
 `-u, --update` | `<macro_id>` | Update macro
-`-o, --open` | `[macro_id]` | Open the macro in ZenDesk
+`-o, --open` | `[macro_id]` | Open the macro in browser
+
+#### add 
+```
+$ zd add macro [options]
+```
+
+This command is an alias for `zd macro [options]`
+
+Options:
+
+Option | Argument | Description
+------ | -------- | -----------
+`-h, --help` |  | output usage information
+`-t, --title` | `<title>` | Set title of macro
+`-f, --file` | `<path>` | Path to comment text file
+`-w, --write` | | Open editor to write comment content
+`-T, --tags` | `<tags>` | Append tags (space delineated)
+`-i, --inactive` | | Make macro inactive
+`-p, --private` | | Set comment mode to private
+`-o, --open` | | Open the macro in browser after adding
+
+#### update
+```
+$ zd update macro <macro_id> [options]
+```
+
+This command is an alias for `zd macro -u <macro_id> [options]`
+
+Options:
+
+Option | Argument | Description
+------ | -------- | -----------
+`-h, --help` |  | output usage information
+`-t, --title` | `<title>` | Set title of macro
+`-f, --file` | `<path>` | Path to comment text file
+`-w, --write` | | Open editor to write comment content
+`-T, --tags` | `<tags>` | Append tags (space delineated)
+`-i, --inactive` | | Make macro inactive
+`-p, --private` | | Set comment mode to private
+`-o, --open` | | Open the macro in browser after updating
+
+#### list
+```
+$ zd list macros
+```
+
+This command is an alias for `zd macro -l`
+
+Options:
+none
+
+#### open
+```
+$ zd open macro <macro_id>
+```
+
+This command is an alias for `zd macro -o <macro_id>`
+
+Options: 
+None
 
 ### License
 

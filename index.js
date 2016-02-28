@@ -32,17 +32,17 @@ program
     });
 
 program
-    .command('add macro')
+    .command('add <type>')
     .option(`-t, --title <title>`, `Set title of macro`)
     .option(`-f, --file <path>`, `Path to comment text file`)
     .option(`-w, --write`, `Open editor to write comment content`)
     .option(`-T, --tags <tags>`, `Append tags (space delineated)`)
     .option(`-i, --inactive`, `Make macro inactive`)
     .option(`-p, --private`, `Set comment mode to private`)
-    .option(`-o, --open`, `Open the macro in ZenDesk`)
-    .description(`Add a macro`)
-    .action((options) => {
-        lib.getScript(`macro`)(options);
+    .option(`-o, --open`, `Open the macro in browser after creating`)
+    .description(`Add a macro or article`)
+    .action((type, options) => {
+        lib.getScript(type)(options);
     });
 
 program
@@ -53,7 +53,7 @@ program
     .option(`-T, --tags <tags>`, `Append tags (space delineated)`)
     .option(`-i, --inactive`, `Make macro inactive`)
     .option(`-p, --private`, `Set comment mode to private`)
-    .option(`-o, --open`, `Open the macro in ZenDesk`)
+    .option(`-o, --open`, `Open the macro in browser after updating`)
     .description(`Update a macro`)
     .action((type, id, options) => {
         options.update = parseInt(id);
