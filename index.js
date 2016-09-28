@@ -26,8 +26,10 @@ program
     .option(`-S, --status <status>`, `Set the status`)
     .option(`-p, --private`, `Set comment mode to private`)
     .option(`-l, --list`, `List all macros`)
-    .option(`-s, --sort <sort_by>`, `Sort macros in list view`)
-    .option(`-u, --update <macro_id>`, `Update macro`, parseInt)
+    .option(`-e, --export [file_name]`, `Export all macros to JSON file`)
+    .option(`-s, --sort <sort_by>`, `Sort macros in list or export`)
+    .option(`-u, --update <macro_id>`, `Update a single macro`, parseInt)
+    .option(`-b, --bulk-update <file>`, `Bulk update macros using data from specified JSON file`)
     .option(`-o, --open [macro_id]`, `Open the macro in ZenDesk`, parseInt)
     .description(`Add, update, list, open macros`)
     .action((options) => {
