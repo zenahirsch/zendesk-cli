@@ -27,7 +27,7 @@ program
     .option(`-p, --private`, `Set comment mode to private`)
     .option(`-l, --list`, `List all macros`)
     .option(`-e, --export [file_name]`, `Export all macros to JSON file`)
-    .option(`-s, --sort <sort_by>`, `Sort macros in list or export`)
+    .option(`-x, --sort <sort_by>`, `Sort macros in list or export`)
     .option(`-u, --update <macro_id>`, `Update a single macro`, parseInt)
     .option(`-b, --bulk-update <file>`, `Bulk update macros using data from specified JSON file`)
     .option(`-o, --open [macro_id]`, `Open the macro in ZenDesk`, parseInt)
