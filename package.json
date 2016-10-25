@@ -26,6 +26,7 @@
   "dependencies": {
     "columnify": "^1.5.4",
     "commander": "^2.9.0",
+    "fs-extra": "^0.30.0",
     "mkdirp": "^0.5.1",
     "node-zendesk": "^1.1.8",
     "open": "0.0.5"
