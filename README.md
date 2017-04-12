@@ -123,7 +123,3 @@ $ zd open macro <macro_id>
 This command is an alias for `zd macro -o <macro_id>`
 
 Options: None
-
-### License
-
-MIT
